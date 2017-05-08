@@ -87,3 +87,6 @@ project(':react-native-baidu-map').projectDir = new File(settingsDir, '../node_m
 | Method                    | Result
 | ------------------------- | -------
 | Promise getDistance(double lat1, double lng1, double lat2, double lng2) | `{"distance": ""}`
+
+
+
