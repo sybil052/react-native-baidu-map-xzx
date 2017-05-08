@@ -81,3 +81,9 @@ project(':react-native-baidu-map').projectDir = new File(settingsDir, '../node_m
 | Promise reverseGeoCodeGPS(double lat, double lng) |  `{"address": "", "province": "", "cityCode": "", "city": "", "district": "", "streetName": "", "streetNumber": ""}`
 | Promise geocode(String city, String addr) | {"latitude": 0.0, "longitude": 0.0}
 | Promise getCurrentPosition() | IOS: `{"latitude": 0.0, "longitude": 0.0, "address": "", "province": "", "cityCode": "", "city": "", "district": "", "streetName": "", "streetNumber": ""}` Android: `{"latitude": 0.0, "longitude": 0.0, "direction": -1, "altitude": 0.0, "radius": 0.0, "address": "", "countryCode": "", "country": "", "province": "", "cityCode": "", "city": "", "district": "", "street": "", "streetNumber": "", "buildingId": "", "buildingName": ""}`
+
+#### GetDistance Methods
+
+| Method                    | Result
+| ------------------------- | -------
+| Promise getDistance(double lat1, double lng1, double lat2, double lng2) | `{"distance": ""}`
