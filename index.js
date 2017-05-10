@@ -15,12 +15,10 @@ import _MapTypes from './js/MapTypes';
 import _MapView from './js/MapView';
 import _MapModule from './js/MapModule';
 import _Geolocation from './js/Geolocation';
-import _PoiSearch from './js/PoiSearch';
 import _GetDistance from './js/GetDistance';
 
 export const MapTypes = _MapTypes;
 export const MapView = _MapView;
 export const MapModule = _MapModule;
 export const Geolocation = _Geolocation;
-export const PoiSearch = _PoiSearch;
 export const GetDistance = _GetDistance;
