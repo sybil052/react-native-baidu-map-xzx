@@ -1,92 +1,23 @@
 {
-  "_args": [
-    [
-      {
-        "raw": "react-native-baidu-map",
-        "scope": null,
-        "escapedName": "react-native-baidu-map",
-        "name": "react-native-baidu-map",
-        "rawSpec": "",
-        "spec": "latest",
-        "type": "tag"
-      },
-      "/Users/xizhixin/demo-react-native/BaiDuMapDemo"
-    ]
-  ],
-  "_cnpm_publish_time": 1489079373764,
-  "_from": "react-native-baidu-map@latest",
-  "_id": "react-native-baidu-map@0.6.0",
-  "_inCache": true,
-  "_location": "/react-native-baidu-map",
-  "_nodeVersion": "5.4.1",
-  "_npmOperationalInternal": {
-    "host": "packages-12-west.internal.npmjs.com",
-    "tmp": "tmp/react-native-baidu-map-0.6.0.tgz_1489079373168_0.5960892087314278"
-  },
-  "_npmUser": {
-    "name": "lovebing",
-    "email": "tangyangjian@gmail.com"
-  },
-  "_npmVersion": "3.3.12",
-  "_phantomChildren": {},
-  "_requested": {
-    "raw": "react-native-baidu-map",
-    "scope": null,
-    "escapedName": "react-native-baidu-map",
-    "name": "react-native-baidu-map",
-    "rawSpec": "",
-    "spec": "latest",
-    "type": "tag"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npm.taobao.org/react-native-baidu-map/download/react-native-baidu-map-0.6.0.tgz",
-  "_shasum": "cb4937181e8e0cd2125d347a5b87ca13971647dd",
-  "_shrinkwrap": null,
-  "_spec": "react-native-baidu-map",
-  "_where": "/Users/xizhixin/demo-react-native/BaiDuMapDemo",
-  "author": {
-    "name": "lovebing"
-  },
-  "bugs": {
-    "url": "https://github.com/lovebing/react-native-baidu-map/issues"
-  },
-  "dependencies": {},
+  "name": "react-native-baidu-map-xzx",
+  "version": "0.6.0",
   "description": "Baidu Map SDK modules and view for React Native(Android & IOS), support react native 0.40+.",
-  "devDependencies": {},
-  "directories": {},
-  "dist": {
-    "shasum": "cb4937181e8e0cd2125d347a5b87ca13971647dd",
-    "size": 26475151,
-    "noattachment": false,
-    "tarball": "http://registry.npm.taobao.org/react-native-baidu-map/download/react-native-baidu-map-0.6.0.tgz"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "gitHead": "1da271d517ea72e2029db4ba2ddfceada077c04a",
-  "homepage": "https://github.com/lovebing/react-native-baidu-map#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sybil052/react-native-baidu-map-xzx.git"
+  },
   "keywords": [
     "Baidu Map",
     "React Native"
   ],
+  "author": "sybil052",
   "license": "ISC",
-  "main": "index.js",
-  "maintainers": [
-    {
-      "name": "lovebing",
-      "email": "tangyangjian@gmail.com"
-    }
-  ],
-  "name": "react-native-baidu-map",
-  "optionalDependencies": {},
-  "publish_time": 1489079373764,
-  "readme": "ERROR: No README data found!",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lovebing/react-native-baidu-map.git"
+  "bugs": {
+    "url": "https://github.com/sybil052/react-native-baidu-map-xzx/issues"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "version": "0.6.0"
+  "homepage": "https://github.com/sybil052/react-native-baidu-map-xzx#readme"
 }
