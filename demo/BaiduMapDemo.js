@@ -15,7 +15,7 @@ import {
     MapModule,
     GetDistance
 
-} from 'react-native-baidu-map';
+} from 'react-native-baidu-map-xzx';
 
 import {
   Button,

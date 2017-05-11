@@ -17,8 +17,8 @@ export default {
   geocode(city, addr) {
     return new Promise((resolve, reject) => {
       try {
-        console.log(_module);
-        alert('geocode='+JSON.stringify(_module));
+        // console.log(_module);
+        // alert('geocode='+JSON.stringify(_module));
         _module.geocode(city, addr);
       }
       catch (e) {
