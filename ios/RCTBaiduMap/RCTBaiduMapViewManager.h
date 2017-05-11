@@ -9,7 +9,7 @@
 #ifndef RCTBaiduMapViewManager_h
 #define RCTBaiduMapViewManager_h
 
-#import "RCTBaiduMapView.h"
+#import <RCTBaiduMap/RCTBaiduMapView.h>
 
 @interface RCTBaiduMapViewManager : RCTViewManager<BMKMapViewDelegate>
 
