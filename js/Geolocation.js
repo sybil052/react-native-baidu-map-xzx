@@ -18,7 +18,6 @@ export default {
     return new Promise((resolve, reject) => {
       try {
         // console.log(_module);
-        // alert('geocode='+JSON.stringify(_module));
         _module.geocode(city, addr);
       }
       catch (e) {
@@ -47,7 +46,6 @@ export default {
   reverseGeoCodeGPS(lat, lng) {
     return new Promise((resolve, reject) => {
       try {
-          alert(_module);
         _module.reverseGeoCodeGPS(lat, lng);
       }
       catch (e) {
@@ -61,30 +59,11 @@ export default {
       });
     });
   },
-  // getDistance(lat1, lng1, lat2, lng2){
-  //     return new Promise((resolve, reject) => {
-  //         try {
-  //             _module.getDistance(lat1, lng1, lat2, lng2);
-  //         }
-  //         catch (e) {
-  //             reject(e);
-  //             return;
-  //         }
-  //         DeviceEventEmitter.once('getDistanceResult', resp => {
-  //             resp.distance = parseFloat(resp.distance);
-  //             alert(resp);
-  //             resolve(resp);
-  //         });
-  //     });
-  //
-  //     //return _module.getDistance(lat1, lng1, lat2, lng2);
-  // },
   getCurrentPosition() {
     if (Platform.OS == 'ios') {
       return new Promise((resolve, reject) => {
         navigator.geolocation.getCurrentPosition((position) => {
           try {
-              alert(_module)
             _module.reverseGeoCodeGPS(position.coords.latitude, position.coords.longitude);
           }
           catch (e) {

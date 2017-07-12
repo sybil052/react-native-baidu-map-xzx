@@ -20,7 +20,6 @@ export default {
     getDistance(lat1, lng1, lat2, lng2){
         return new Promise((resolve, reject) => {
             try {
-                // alert(_module);
                 _module.getDistance(lat1, lng1, lat2, lng2);
             }
             catch (e) {
