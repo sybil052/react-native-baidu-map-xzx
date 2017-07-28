@@ -11,6 +11,7 @@
 
 @implementation GeolocationModule {
     BMKPointAnnotation* _annotation;
+    BMKLocationService *_locService;
 }
 
 @synthesize bridge = _bridge;
@@ -73,8 +74,18 @@ RCT_EXPORT_METHOD(reverseGeoCode:(double)lat lng:(double)lng) {
 RCT_EXPORT_METHOD(reverseGeoCodeGPS:(double)lat lng:(double)lng) {
     
     [self getGeocodesearch].delegate = self;
-    CLLocationCoordinate2D baiduCoor = [self getBaiduCoor:lat lng:lng];
+    // CLLocationCoordinate2D baiduCoor = [self getBaiduCoor:lat lng:lng];
+    CLLocationCoordinate2D baiduCoor = CLLocationCoordinate2DMake(lat, lng);
     
+    //判断是否在中国
+    if (![TQLocationConverter isLocationOutOfChina:baiduCoor])
+    {
+        //将WGS-84转为GCJ-02(火星坐标)
+        baiduCoor = [TQLocationConverter transformFromWGSToGCJ:baiduCoor];
+        NSLog(@"123456789======%f,%f",baiduCoor.latitude,baiduCoor.longitude);
+        
+    }
+
     CLLocationCoordinate2D pt = (CLLocationCoordinate2D){baiduCoor.latitude, baiduCoor.longitude};
     
     BMKReverseGeoCodeOption *reverseGeoCodeSearchOption = [[BMKReverseGeoCodeOption alloc]init];
@@ -198,9 +209,7 @@ RCT_EXPORT_METHOD(reverseGeoCodeGPS:(double)lat lng:(double)lng) {
     NSDictionary* testdic = BMKConvertBaiduCoorFrom(coor,BMK_COORDTYPE_COMMON);
     testdic = BMKConvertBaiduCoorFrom(coor,BMK_COORDTYPE_GPS);
     CLLocationCoordinate2D baiduCoor = BMKCoorDictionaryDecode(testdic);
-    
     return baiduCoor;
 }
-
 
 @end

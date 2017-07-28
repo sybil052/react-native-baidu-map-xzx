@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3536B6EC1F2B175300251CBF /* TQLocationConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3536B6EB1F2B175300251CBF /* TQLocationConverter.m */; };
 		35DFA2A81EBC781F009A7289 /* GetDistanceModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DFA2A71EBC781F009A7289 /* GetDistanceModule.m */; };
 		EF154DCB1D56218D003146DF /* BaiduMapModule.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EF3C22621CC2C3BE0099E9B6 /* BaiduMapModule.h */; };
 		EF154DCC1D562193003146DF /* RCTBaiduMapViewManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = EF6660E71D55E68000DB8D08 /* RCTBaiduMapViewManager.h */; };
@@ -34,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3536B6EA1F2B175300251CBF /* TQLocationConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQLocationConverter.h; sourceTree = "<group>"; };
+		3536B6EB1F2B175300251CBF /* TQLocationConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQLocationConverter.m; sourceTree = "<group>"; };
 		35DFA2A61EBC781F009A7289 /* GetDistanceModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetDistanceModule.h; sourceTree = "<group>"; };
 		35DFA2A71EBC781F009A7289 /* GetDistanceModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetDistanceModule.m; sourceTree = "<group>"; };
 		EF3C22561CC2C30D0099E9B6 /* libRCTBaiduMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRCTBaiduMap.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +82,8 @@
 		EF3C22581CC2C30D0099E9B6 /* RCTBaiduMap */ = {
 			isa = PBXGroup;
 			children = (
+				3536B6EA1F2B175300251CBF /* TQLocationConverter.h */,
+				3536B6EB1F2B175300251CBF /* TQLocationConverter.m */,
 				EF3C22591CC2C30D0099E9B6 /* RCTBaiduMapView.h */,
 				EF3C225B1CC2C30D0099E9B6 /* RCTBaiduMapView.m */,
 				EF3C22621CC2C3BE0099E9B6 /* BaiduMapModule.h */,
@@ -151,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3536B6EC1F2B175300251CBF /* TQLocationConverter.m in Sources */,
 				EF4ABB0D1DC378CF008E75C9 /* GeolocationModule.m in Sources */,
 				35DFA2A81EBC781F009A7289 /* GetDistanceModule.m in Sources */,
 				EF4ABB101DC3793B008E75C9 /* BaseModule.m in Sources */,

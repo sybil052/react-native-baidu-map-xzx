@@ -14,8 +14,9 @@
 
 #import "BaseModule.h"
 #import "RCTBaiduMapViewManager.h"
+#import "TQLocationConverter.h"
 
-@interface GeolocationModule : BaseModule <BMKGeoCodeSearchDelegate> {
+@interface GeolocationModule : BaseModule <BMKGeoCodeSearchDelegate,BMKLocationServiceDelegate> {
 }
 
 @end

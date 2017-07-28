@@ -29,10 +29,17 @@ RCT_CUSTOM_VIEW_PROPERTY(center, CLLocationCoordinate2D, RCTBaiduMapView) {
 +(void)initSDK:(NSString*)key {
     
     BMKMapManager* _mapManager = [[BMKMapManager alloc]init];
+
+    if ([BMKMapManager setCoordinateTypeUsedInBaiduMapSDK:BMK_COORDTYPE_COMMON]) {
+        NSLog(@"经纬度类型设置成功");
+    } else {
+        NSLog(@"经纬度类型设置失败");
+    }
     BOOL ret = [_mapManager start:key  generalDelegate:nil];
     if (!ret) {
         NSLog(@"manager start failed!");
     }
+    
 }
 
 - (UIView *)view {
